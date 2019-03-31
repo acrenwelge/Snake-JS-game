@@ -1,0 +1,46 @@
+:root {
+  --game-width: 500px;
+  --shadow-color: grey;
+}
+
+#score-container {
+  width: var(--game-width);
+  margin: auto;
+}
+#btn-container {
+  height: 50px;
+  width: var(--game-width);
+  margin: auto;
+}
+#canvas-container {
+  margin: auto;
+  width: var(--game-width);
+}
+#top-scores {
+  width: var(--game-width);
+}
+canvas {
+  margin: auto;
+  box-shadow: 10px 10px 5px var(--shadow-color);
+}
+h1 {
+  text-align: center;
+}
+button {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 2px 2px var(--shadow-color);
+}
+button[disabled] {
+  background-color: grey !important;
+}
+#start {
+  background-color: blue;
+}
+#pause {
+  background-color: red;
+}
