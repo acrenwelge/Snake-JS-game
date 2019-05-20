@@ -67,7 +67,7 @@ function init() {
 
   function resetGame() {
     stopAnimation();
-    speed = 1;
+    speed = 5;
     score = 0;
     direction = directions.up;
     snakeHead = getCenterCoords();
@@ -177,8 +177,6 @@ function init() {
           y: Math.floor(Math.random() * squaresPerSide)
         };
       } while(snakeCoords.filter(c => c.x === fruitLocation.x && c.y === fruitLocation.y) > 0);
-      // increase speed
-      speed++;
     } else { // didn't eat fruit
       if (!(snakeCoords.length <= 2)) {
         snakeCoords.shift(); // keep the snake "moving" by removing from the tail
